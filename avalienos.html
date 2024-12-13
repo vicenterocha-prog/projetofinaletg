@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie-nos</title>
+    <link rel="stylesheet" href="styleavalienos.css">
+</head>
+<body>
+    <h1>Avalie-nos</h1>
+    <form action="processaavalienos.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="avaliacao">Avaliação:</label>
+        <select id="avaliacao" name="avaliacao" required>
+            <option value="1">1 Estrela</option>
+            <option value="2">2 Estrelas</option>
+            <option value="3">3 Estrelas</option>
+            <option value="4">4 Estrelas</option>
+            <option value="5">5 Estrelas</option>
+        </select>
+
+        <label for="comentarios">Comentários:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+
+    <div>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Principal</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="carrinho.php">Carrinho de Compras</a></li>
+                    <li><a href="formulario.html">Cadastre-se</a></li>
+                </ul>
+            </nav>
+                    <p>&copy; 2024 Vatapá da Mana. Todos os direitos reservados.</p>
+            </footer>
+    </div>
+</body>
+</html>

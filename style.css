@@ -1,0 +1,236 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f1;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #FFF;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+main {
+    padding: 20px;
+}
+
+.banner {
+    background-color: #8FBC8F; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+.banner {
+    background-color: #8FBC8F;
+    padding: 20px;
+    text-align: center;
+  }
+
+.destaques {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.destaques h2 {
+    color: #4CAF50; /* Verde escuro */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.produto-card {
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #FFF;
+    text-align: center;
+    width: calc((100% / 3) - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.produto-card img {
+    max-width: 100%;
+    max-height: 200px;
+    margin: auto;
+    border-radius: 5px;
+    transition: opacity 0.2s ease;
+}
+
+.produto-card h3 {
+    color: #4CAF50;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.produto-card p {
+    font-size: 0.9em;
+    color: #333;
+    flex-grow: 1;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto-card img:hover {
+    opacity: 0.8;
+}
+
+.produto-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+    align-self: center;
+}
+
+.produto-card button:hover {
+    background-color: #388E3C; /* Verde mais escuro */
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.slick-prev:before, .destaques:before {
+    color: #4CAF50;
+}
+
+#contato {
+    background-color: #8FBC8F;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#contato h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato form label {
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+#contato form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contato form button:hover {
+    background-color: #388E3C; 
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    position: relative;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.cta-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #388E3C; /* Verde mais escuro */
+}
+
+
+
+

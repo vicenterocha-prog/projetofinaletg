@@ -1,0 +1,26 @@
+Biblioteca de Hashing de Senhas:
+
+A função password_hash() do PHP é a forma mais recomendada para criar hashes de senhas de forma segura. Ela utiliza algoritmos fortes como bcrypt e automaticamente ajusta o custo do hash para garantir a segurança.
+
+<?php
+$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+          
+Exemplo de Código PHP Completo (utilizando Laravel):
+
+use Illuminate\Support\Facades\Hash;
+
+// ... (código para conectar ao banco de dados)
+
+$validatedData = $request->validate([
+    'nome' => 'required|string|max:100',
+    'cpf' => 'required|string|unique:usuarios',
+    // ... outros campos
+]);
+
+$user = new User;
+$user->nome = $validatedData['nome'];
+$user->cpf = $validatedData['cpf'];
+// ... outros campos
+$user->senha = Hash::make($validatedData['senha']);
+$user->save();
+
